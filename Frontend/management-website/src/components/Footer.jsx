@@ -40,7 +40,7 @@ export default function Footer() {
 
           {/* Designer Info */}
           <p className="text-xs text-center">
-            Website Designed by Jobey Farias, Ramon Bernal, Dante Peraza  &copy; {new Date().getFullYear()}
+            Website Designed by Jobey Farias  &copy; {new Date().getFullYear()}
           </p>
 
           {/* Social Media Icons */}

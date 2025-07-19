@@ -85,16 +85,6 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="/about"
-            className={`text-lg ${
-              pathname === "/" && !isScrolled ? "text-white" : "text-black"
-            }`}
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
             href="/contact"
             className={`text-lg ${
               pathname === "/" && !isScrolled ? "text-white" : "text-black"

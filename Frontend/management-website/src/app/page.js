@@ -6,7 +6,7 @@ export default function Home() {
   const [videoAvailable, setVideoAvailable] = useState(true);
 
   useEffect(() => {
-    fetch("/your-video.mp4", { method: "HEAD" })
+    fetch("/videos/tour.mp4", { method: "HEAD" })
       .then((res) => {
         if (!res.ok) setVideoAvailable(false);
       })
@@ -24,7 +24,7 @@ export default function Home() {
             muted
             playsInline
           >
-            <source src="/your-video.mp4" type="video/mp4" />
+            <source src="/videos/tour.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -39,15 +39,26 @@ export default function Home() {
           
           <h1 className="text-black text-3xl font-bold mb-4">Amenities</h1>
           
-          <div className="bg-slate-900 w-full h-full max-h-[90%] max-w-[80%] p-5 rounded-lg shadow-lg">
-            <ul className="text-white text-left">
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
-              <li>4</li>
-              <li>5</li>
+          <div className="bg-white p-6 rounded-xl shadow-md w-full max-w-[80%]">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Top Amenities</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Quartz Countertops & Stainless Steel Appliances</li>
+              <li>In-Unit Washer & Dryer</li>
+              <li>Walk-In Closets</li>
+              <li>Smart Home Features (Keyless Entry, Thermostat)</li>
+              <li>Resort-Style Swimming Pool</li>
+              <li>24-Hour Fitness Center with Yoga Studio</li>
+              <li>Private Balconies or Patios</li>
+              <li>Co-Working Lounge & Private Offices</li>
+              <li>Pet-Friendly Community with Dog Park</li>
+              <li>Private offices for rent</li>
+              <li>Outdoor Kitchen & Fire Pit Lounge</li>
+              <li>Package Lockers with 24/7 Access</li>
+              <li>High-Speed Fiber Internet Available</li>
+              <li>Resident Events & Community Socials</li>
             </ul>
           </div>
+
         </div>
 
         <div className="basis-2/3 flex flex-col items-center">

@@ -1,10 +1,10 @@
 import { Carousel } from "./ui/Carousel";
 
 const slides = [
-  { image: "/images/apartment1.jpg", title: "Apartment 1" },
-  { image: "/images/apartment2.jpg", title: "Apartment 2" },
-  { image: "/images/community1.jpg", title: "Community 1" },
-  { image: "/images/community2.jpg", title: "Community 2" },
+  { src: "/images/apt.png", title: "Apartment 1" },
+  { src: "/images/apt2.png/", title: "Apartment 2" },
+  { src: "/images/gym.jpg", title: "Community 1" },
+  { src: "/images/outside.png", title: "Community 2" },
 ];
 
 export default function Gallery() {
